@@ -18,10 +18,20 @@ eventbrite: 49162646800
 survey2: http://goo.gl/forms/AQdU9I3Z3l
 wifiUsername: SoftwareCarpentry
 wifiPassword: "hackerwithin"
-etherpad: https://drive.google.com/drive/folders/1MLRl4GVTaowyInsbaRUlMHaWV7DlMusm?usp=sharing
+etherpad: https://drive.google.com/open?id=1jlxZIx9ii6hjWr6LupJnUmPRuTa_BybR7-oaBP4_0FA
 ---
 
-
+{% if page.etherpad %}
+<p id="etherpad">
+  <strong>Google Docs:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+  <br/>
+  We will use this Google Docs for chatting, taking notes, and sharing URLs and bits of code.
+  <br/>
+  <strong>Workshop Files:</strong> <a href="https://drive.google.com/drive/folders/1MLRl4GVTaowyInsbaRUlMHaWV7DlMusm?usp=sharing">here</a>.
+  <br/>
+  Other files needed can be found here.
+  </p>
+{% endif %}
 
 <!-- See instructions in the comments below for how to edit specific sections of this workshop template. 
 Main things to edit include:
@@ -222,17 +232,7 @@ _pre_survey }}{{ site.github.project_title }}'>Pre-workshop Survey</a></p>
   where 'YYYY-MM-DD-site' is the identifier for your workshop,
   e.g., '2015-06-10-esu'.
 -->
-{% if page.etherpad %}
-<p id="etherpad">
-  <strong>Google Docs:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
-  <br/>
-  We will use this Google Docs for chatting, taking notes, and sharing URLs and bits of code.
-  <br/>
-  <strong>Workshop Files:</strong> <a href="https://drive.google.com/open?id=1IeO6eKpMxTQCXX1tVCLzOpyy4zTcoQBc">here</a>.
-  <br/>
-  Other files needed can be found here.
-  </p>
-{% endif %}
+
 
 <!--
   SYLLABUS
